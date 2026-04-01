@@ -8,7 +8,6 @@ public class HelloWorld
     double peshaOrizit = 28.5; // numra decimal;
     string emriAkademis = "Edumind Academy (2026) 0.05241"; // tekst
     bool majmOr = true; // 0 apo 1
-
-    
+    Console.WriteLine("Hello World");
   }
 }
