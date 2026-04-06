@@ -37,7 +37,7 @@ public class HelloWorld
         rroga = 1000;
         numriIPuntorve =50;
         
-         rrogaMujore = rroga * numriIPuntorve;
+        rrogaMujore = rroga * numriIPuntorve;
          
         Console.WriteLine("Mas ndryshimit");
         Console.WriteLine(rrogaMujore);
@@ -45,8 +45,14 @@ public class HelloWorld
         
     
         // 2000000
-        
-        
-        
+
+        bool tuMajtOr = true;
+
+        if (tuMajtOr == true)
+        {
+            Console.WriteLine("Jemi duke majtur or");
+        }
+
+
     }
 }
