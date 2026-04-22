@@ -19,8 +19,11 @@ public class Recap2
     string emriAkademis = Edumind;
     bool bjeShi = false;
 
-    string vitetMas5Viteve = vitet + "5"; // 215 a 26
-    Console.WriteLine(vitetMas5Viteve);
+    // string vitetMas5Viteve = vitet + "5"; // 215 a 26
+    // Console.WriteLine(vitetMas5Viteve);
+
+
+    
 
 
   }
