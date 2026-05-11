@@ -14,27 +14,37 @@ public class ForLoops
     // pjese e kodit qe egzekutohet xhdo cikel
     // }
 
-    for (int zh=1; zh<=50;zh++)
+    // for (int zh=1; zh<=50;zh++)
+    // {
+    //   if(zh % 2 == 0)
+    //   {
+    //     Console.WriteLine("Numri " + zh + " esht cift");
+    //   } 
+    //   else
+    //   {
+    //     Console.WriteLine("Numri " + zh + " esht tek");
+    //   }
+    // }
+
+
+    // for (int i=20; i>=1;i--) {
+    //       Console.WriteLine(i);
+      
+          
+    //   }
+
+      
+    // Console.WriteLine(numri);
+
+    int vlera = 1;
+    for (int i=1; i <= 50; i++)
     {
-      if(zh % 2 == 0)
+      if (i % 2 == 1  )
       {
-        Console.WriteLine("Numri " + zh + " esht cift");
-      } 
-      else
-      {
-        Console.WriteLine("Numri " + zh + " esht tek");
+        Console.WriteLine("Ky numer esht tek " + i);
       }
     }
 
-
-    for (int i=20; i>=1;i--) {
-          Console.WriteLine(i);
-      
-          
-      }
-
-      
-    Console.WriteLine(numri);
 
 
   }
