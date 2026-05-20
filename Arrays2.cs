@@ -40,9 +40,55 @@ public class Arrays2
     //   }
     // }
 
-    int[] arr = [10, 20, -5, 18, 21, -14];
+    // int[] arr = [10, 20, -5, 18, 21, -14];
 
-    
+    // int vitet = 20;
+    // double temp = 52.5;
+    // string emri = "Humen";
+    // bool flag = false;
+
+    // int[] vitet = [14, 13, 15,13];
+    //             0    1  2   3
+    // int[] vitet = {14, 13, 15, 13};
+
+    // String[] nxensit = new string[3];
+    // nxensit[0] = "Almir Aga";
+    // nxensit[1] = "Baci Hamza";
+    // nxensit[2] = "Trim Faceri";
+
+
+    // vitet[3]
+    // vitet.push(14);
+
+    // for (int i=0; i < vitet.Length ; i++)
+    // {
+    //   Console.WriteLine("i: " + i);
+    //   Console.WriteLine(vitet[i]);
+    // }
+
+
+    // int[] arr = [10, 20, -5, 18, 21, -14];
+    // int pozitiv = 1;
+    // int negativ = 0;
+    // for (int i=0; i < arr.Length; i++)
+    // {
+    //   if (arr[i] > 0)
+    //   {
+    //     pozitiv *= arr[i];
+    //   } else
+    //   {
+    //     negativ -= arr[i];
+    //   }
+    // }
+    int numrat = {2,-4,5,3,1,2,21,53};
+
+
+    Console.WriteLine("Pozitiv: " + pozitiv);
+    Console.WriteLine("Negativ: " + negativ);
+
+
+
+
 
   }
 }
