@@ -81,6 +81,15 @@ public class Functions {
         return shuma;
     }
 
+    public static void shtoTekst(string txt, string shto)
+    {
+        txt += shto;
+
+    }
+
+    // shtoTekst("Omer", " Tairi")
+
+
     public static void Main(string[] args)
     {
         // pershendetje();
@@ -110,7 +119,17 @@ public class Functions {
         // Console.WriteLine(palindrom("TALAT"));
         // Console.WriteLine(palindrom("233142"));
 
-        shumaDeriNe(4);
-        shumaDeriNe(5);
+        // shumaDeriNe(4);
+        // shumaDeriNe(5);
+
+        string emri = "Omer";
+        shtoTekst(emri, " Tairi");
+        Console.WriteLine(emri); // Omer Tairi
+
+        char[] txt = emri.ToCharArray();
+        txt[2] = "3";
+        emri = new string(txt);        // Om3r
+
+
     }
 }

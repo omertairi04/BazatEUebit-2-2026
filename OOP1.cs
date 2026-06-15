@@ -1,54 +1,92 @@
 using System;
 public class OOP1
 {
-
-  static void GjejCift()
-  {
-    Console.WriteLine("U thirr funksioni");
-  }
-
-
-
   public static void Main(string[] args)
   {
-    // int[] arr1 = {1 , 3 , 5 , 2 , 4 , 1};
-    // int[] arr2 = {6, -3, 2, 4, -1 , -5 , 20};
+    Perdorues user = new Perdorues("user1", "user321", "admin123");
+    Perdorues omer = new Perdorues("omer1", "Omer Tairi", "admin32");
 
-    GjejCift();
 
-    // for (int i =0;i<arr1.Length;i++)
-    // {
-    //   if (arr1[i] % 2 == 0)
-    //   {
-    //     Console.WriteLine("i eshte cift , sepse i = " + arr1[i]);
-    //   }
-    // }
+    Kerri[] kerrat = new Kerri[10];
+    int indexKerrat = 0;
 
-    // for (int i=0;i<arr2.Length;i++)
-    // {
-    //   if (arr2[i] % 2 == 0)
-    //   {
-    //     Console.WriteLine("i eshte cift , sepse i = " + arr2[i]);
-    //   }
-    // }
+    Kerri bmw = new Kerri("BMW","M5", 2025, 190500.00);
+    // Console.WriteLine(bmw.getKM());
+    bmw.bejUdhtim(500);
+    // Console.WriteLine(bmw.getKM());
 
+    // Console.WriteLine(bmw.getCmimi());
+    bmw.setCmimi(200000);
+    // Console.WriteLine(bmw.getCmimi());
+
+    kerrat[indexKerrat] = bmw;
+    indexKerrat += 1;
+    Kerri mercedes = new Kerri("Mercedes Benz", "C-class", 2025, 170000);
+    kerrat[indexKerrat] = mercedes;
+    indexKerrat += 1;
+
+    Console.WriteLine(mercedes.ToString());
+    Console.WriteLine(bmw.ToString());
   }
-
 }
 
+class Kerri
+{
+  string firma;
+  string modeli;
+  int viti;
+  double cmimi;
+  int km;
+
+  public Kerri(string firma, string modeli, int viti, double cmimi)
+  {
+    this.firma = firma;
+    this.modeli = modeli;
+    this.viti = viti;
+    this.cmimi = cmimi;
+    this.km = 0;
+  }
+
+  public void setCmimi(double cmimiIRi)
+  {
+    this.cmimi = cmimiIRi;
+  }
+
+  public double getCmimi()
+  {
+    return this.cmimi;
+  }
+
+  public int getKM()
+  {
+    return this.km;
+  }
+
+  public void bejUdhtim(int gjatsiaUdhtimit)
+  {
+    this.km += gjatsiaUdhtimit;
+    this.setCmimi(this.cmimi - 10000);
+  }
+
+  public string ToString()
+  {
+    return this.firma + " " + this.modeli + " " + this.cmimi + " - " + this.km;
+  }  
+}
 
 class Perdorues
 {
-  string username;
-  string fullName;
-  string password;
+  public string username;
+  public string fullName;
+  public string password;
 
-  Perdorues(string username, string fullName, string password)
+  public Perdorues(string username, string fullName, string password)
   {
     this.username = username;
     this.fullName = fullName;
     this.password = password;
   }
+
 
 
 
