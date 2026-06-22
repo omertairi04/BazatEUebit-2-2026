@@ -17,23 +17,29 @@ public class OOP2
     Account d = new Account("AD", "AD", "AD", "AD");
     Account e = new Account("AE", "AE", "AE", "AE");
 
+
+    Console.WriteLine(a.name);
+    a.GetName();
+
+    a.SetName("emri I Ri");
+
     FollowAccount(a, b);
     FollowAccount(b,a);
     FollowAccount(a,c);
     FollowAccount(a,d);
     FollowAccount(a,e);
-    Console.WriteLine(a);
-    Console.WriteLine(b);
+    Console.WriteLine("A: " + a);
+    Console.WriteLine("B: " + b);
     a.showFollowing();
   }
 }
 
 public class Account
 {
-  string username;
-  string name;
-  string bio;
-  string password;
+  private string username;
+  private string name;
+  private string bio;
+  private string password;
   ArrayList followers = new ArrayList();
   ArrayList following = new ArrayList();
   
@@ -53,6 +59,11 @@ public class Account
   public void SetName(string emriIRi)
   {
     this.name = emriIRi;
+  }
+
+  public string GetName()
+  {
+    return this.name;
   }
 
   public void Follow(Account account)
