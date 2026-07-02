@@ -1,0 +1,16 @@
+Mund ta perdorni kodin ndihmes prej ketu:
+https://github.com/omertairi04/BazatEUebit-2-2026/
+dhe ti shifni kodet e OOP1.cs, OOP2.cs ,OOP3.cs , OOP4.cs
+
+Te krijoni nje klas Vetur, me atributet, brendi (string) , 
+modeli (string) ,vitiProdhimit (int), cmimi(int), dhe secila vetur 
+fillon me 0km (apo kilometratTotale), dhe gjendja == “I RI” . 
+Si dhe ta beni override metoden ToString duke bere return brendi – 
+modeli – vitiProdhimit – cmimi – km – gjendja.
+Si dhe te beni nje metod tjeter levizVeturen(int km) – 
+kjo metod I shton km nga argumenti tek kilometratTotale, 
+nqofese vetura I ben me shum se 80000 km total at here ja ndryshojm 
+gjendjen ne “I PERDORUR”, nqoftese I tejkalon me shum se 150000 
+km total at here ja bejm gjendjen “I perdorur shumm”, 
+dhe nqoftese I tejkalon 300000 at here ja ndryshoni gjendjen ne 
+“I VJETER”
