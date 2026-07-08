@@ -20,7 +20,7 @@ public class DetyraOOP
 
     beu1.shtoNxenes(ajan);
     beu1.shtoNxenes(rajan);    
-    beu1.shtoNxenes(anuar);    
+    beu1.shtoNxenes(anuar);
 
     beu2.shtoNxenes(hamza);
     beu2.shtoNxenes(muadh);
@@ -30,6 +30,9 @@ public class DetyraOOP
     Console.WriteLine("---------------------");
     beu2.shfaqNxenesit();
 
+    Console.WriteLine("---------------------");
+    Console.WriteLine("---------------------");
+    Console.WriteLine(rajan); // Nxenes
   }
 }
 
@@ -50,23 +53,31 @@ public class Person
       return this.emri;
   }
 
+  public void setName(string newName)
+  {
+    this.emri = newName;
+  }
+
   public string displayInfo()
   {
     return this.emri + " " + this.mbiemri + " " + this.vitet;
+  }
+
+  public override string ToString()
+  {
+    return this.displayInfo();
   }
 
 }
 
 public class Arsimtari : Person
 {
-  
   string diploma;
   ArrayList klasat;
 
   public Arsimtari(string emri, string mbiemri, int vitet, string diploma) 
   : base(emri, mbiemri, vitet)
-  {
-    
+  { 
     this.diploma = diploma;
     this.klasat = new ArrayList();
   }
@@ -80,7 +91,7 @@ public class Arsimtari : Person
   {
     for (int i=0; i < klasat.Count; i++)
     {
-    //   Console.WriteLine(klasat[i].getId());
+      // Console.WriteLine(klasat[i].getId());
     }
   }
 
