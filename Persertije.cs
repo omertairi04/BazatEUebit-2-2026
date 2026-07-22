@@ -16,8 +16,8 @@ public class User
 
   public string generateName(string username, string email)
   {
-    char[] usrChar = username.ToCharArray();
-    char[] emlChar = email.ToCharArray();
+    char[] usrChar = username.ToCharArray(); // {'o' , 'm', 'e'};
+    char[] emlChar = email.ToCharArray(); // {'o'}
     
     char[] emri = {usrChar[0], usrChar[1], usrChar[2], 
     emlChar[emlChar.Length - 3], emlChar[emlChar.Length - 2],emlChar[emlChar.Length - 1]};
@@ -39,11 +39,13 @@ public class Admin : User {
   string roli = "Administrator";
   ArrayList puntort;
 
+  int mosha;
 
-  public Admin(string username, string email)
+  public Admin(string username, string email, int mosha)
   : base(username, email)
   {
     this.puntort = new ArrayList();
+    this.mosha = mosha;
   }
 
   public void shtoPuntor(Puntor p)
@@ -53,7 +55,7 @@ public class Admin : User {
 
   public override string ToString()
   {
-    string rezultati = "ADMIN " + "\n";
+    string rezultati = "ADMIN " + this.mosha +  "\n";
     for (int i=0; i<this.puntort.Count;i++)
     {
       rezultati += this.puntort[i].ToString() + "\n";
@@ -84,8 +86,8 @@ public class Perseritje
   public static void Main(string[] args)
   {
 
-    Admin a = new Admin("omer", "tairiomer04");
-    
+    Admin a = new Admin("omer", "tairiomer04", 24);
+    // Admin b = new Admin("ome", "o");
 
     Puntor p = new Puntor("tairi", "tairi", "Kipper");
 
